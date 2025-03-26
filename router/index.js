@@ -23,7 +23,7 @@ router.get('/api/alumnos',(req,res) =>{
 })
 
 router.get('/getapi',(req,res) =>{
-    res.sendFile(path.join(__dirname, "../getApi.html"))
+    res.sendFile(path.join(__dirname, "../getAPI.html"))
 })
 
 router.get('/api/alumnos/:idAlumno',(req,res) =>{
