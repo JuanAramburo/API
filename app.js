@@ -3,6 +3,7 @@ import http from "http";
 import path from "path";
 import bodyParser from "body-parser";
 import ejs from "ejs";
+import cors from "cors";
 import { fileURLToPath } from "url";
 import misRutas from "./router/index.js";
 
@@ -18,10 +19,12 @@ const app = express();
 app.set('view engine','ejs');
 
 //directorios
+app.use(cors());
 app.use(misRutas);
 app.use(express.static(path.join(__dirname,'public')));
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
+
 
 
 //iniciar servidor
