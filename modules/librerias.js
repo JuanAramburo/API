@@ -9,6 +9,16 @@ export function multiplicar(a,b){
     return a*b;
 }
 
+export let data = [
+    {
+        id : "1",
+        nombre : "Jose Lopez",
+        domicilio : "Av del mar 1200",
+        edad : "20",
+        sexo : "M"
+    }
+]
+
 export const alumnos = [
     {
         id : "1",
